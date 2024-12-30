@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Luxurious Shop</h1>
+    </header>
+    <main>
+        <!-- Product List -->
+        <div id="products">
+            <div class="product">
+                <h2>Premium Watch</h2>
+                <p>Price: $250</p>
+                <button onclick="addToCart('Premium Watch', 250)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h2>Leather Bag</h2>
+                <p>Price: $150</p>
+                <button onclick="addToCart('Leather Bag', 150)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h2>Luxury Sunglasses</h2>
+                <p>Price: $120</p>
+                <button onclick="addToCart('Luxury Sunglasses', 120)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Shopping Cart -->
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+            <p id="total">Total: $0</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
